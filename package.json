@@ -1,0 +1,22 @@
+{
+  "name": "gulp-checkcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxeric/gulp-checkcss.git"
+  },
+  "keywords": [
+    "checkcss"
+  ],
+  "author": "pxeric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pxeric/gulp-checkcss/issues"
+  },
+  "homepage": "https://github.com/pxeric/gulp-checkcss#readme"
+}
