@@ -6,7 +6,15 @@ var PluginError = gutil.PluginError;
 
 const PLUGIN_NAME = 'gulp-checkcss';
 
-function gulpCheckCss(scssPath) {
+function gulpCheckCss(arrPath) {
+    var scssArr= new Array(0);
+    arrPath.forEach(function(el,ind){
+        if(el.indexOf('!')===-1){
+            scssArr.push(el);
+        }
+    });
+    
+    var scssPath=scssArr[0];
     // 创建一个让每个文件通过的 stream 通道
     var stream = through.obj(function (file, enc, cb) {
         //拼接scss文件路径
